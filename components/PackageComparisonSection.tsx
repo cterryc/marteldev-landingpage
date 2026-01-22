@@ -120,6 +120,56 @@ const PackageComparisonSection: React.FC<{ templateName: string }> = () => {
               </tr>
               <tr className='border-b border-cream/5'>
                 <td className='py-4 px-4 text-cream/80'>
+                  Delivery y mapa de envíos
+                </td>
+                <td className='text-center py-4 px-4 bg-charcoal/30'>
+                  <svg
+                    className='w-6 h-6 text-primary mx-auto'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                </td>
+                <td className='text-center py-4 px-4 bg-primary/5'>
+                  <svg
+                    className='w-6 h-6 text-primary mx-auto'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                </td>
+                <td className='text-center py-4 px-4 bg-charcoal/30'>
+                  <svg
+                    className='w-6 h-6 text-primary mx-auto'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                </td>
+              </tr>
+              <tr className='border-b border-cream/5'>
+                <td className='py-4 px-4 text-cream/80'>
                   Carrito de compras funcional
                 </td>
                 <td className='text-center py-4 px-4 bg-charcoal/30'>

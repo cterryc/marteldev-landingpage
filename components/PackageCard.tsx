@@ -1,11 +1,13 @@
+import { useNavigate } from 'react-router'
 import { type Package } from '../DTO/ecommerce.dto'
 import { contactWhatsApp } from '../helpers/globalFunctions'
 
 // Package Card Component
 const PackageCard: React.FC<{ pkg: Package }> = ({ pkg }) => {
+  const navigate = useNavigate()
   return (
     <div
-      className={`bg-charcoal border ${pkg.isPopular ? 'border-2 border-primary' : 'border-cream/10'} p-8 hover:border-primary/40 transition-all duration-500 reveal-scroll ${pkg.isPopular ? 'relative' : ''}`}
+      className={`bg-charcoal border ${pkg.isPopular ? 'border-2 border-primary' : 'border-cream/10'} p-8 hover:border-primary/40 transition-all duration-500 reveal-scroll ${pkg.isPopular ? 'relative' : ''} flex flex-col justify-between`}
     >
       {pkg.isPopular && (
         <div className='absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-dark px-4 py-1 text-[9px] font-bold uppercase tracking-widest'>
@@ -30,7 +32,10 @@ const PackageCard: React.FC<{ pkg: Package }> = ({ pkg }) => {
           {pkg.description}
         </p>
       </div>
-      <div className='space-y-3 mb-8'>
+      <div
+        className='space-y-3 mb-8 h-full
+      '
+      >
         {pkg.features.map((feature, idx) => (
           <div key={idx} className='flex items-start gap-3'>
             <svg
@@ -58,7 +63,13 @@ const PackageCard: React.FC<{ pkg: Package }> = ({ pkg }) => {
           </p>
         )}
         <button
-          onClick={() => contactWhatsApp(pkg.ctaAction)}
+          onClick={() => {
+            if (pkg.ctaText === 'Cotizar por WhatsApp') {
+              contactWhatsApp(pkg.ctaText)
+            } else {
+              navigate('/templates')
+            }
+          }}
           className={`w-full ${pkg.title === 'PERSONALIZADO' ? 'bg-cream text-dark' : 'bg-primary text-dark'} py-4 font-display text-xs font-bold uppercase tracking-widest hover:${pkg.title === 'PERSONALIZADO' ? 'bg-cream/90' : 'bg-primary/90'} transition-all`}
         >
           {pkg.ctaText}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { type TemplateDetailsProps } from '../DTO/ecommerce.dto'
-import { contactWhatsApp } from '../helpers/globalFunctions'
+// import { contactWhatsApp } from '../helpers/globalFunctions'
 
 // Template Details Hero Component
 const TemplateDetailsHero: React.FC<{ template: TemplateDetailsProps }> = ({
@@ -71,7 +71,7 @@ const TemplateDetailsHero: React.FC<{ template: TemplateDetailsProps }> = ({
               >
                 Ver Demo en Vivo
               </Link>
-              <button
+              {/* <button
                 id='cta-whatsapp'
                 onClick={() =>
                   contactWhatsApp(
@@ -81,7 +81,7 @@ const TemplateDetailsHero: React.FC<{ template: TemplateDetailsProps }> = ({
                 className='flex-1 bg-primary text-dark px-8 py-4 font-display text-xs font-bold uppercase tracking-widest hover:bg-primary/90 transition-all'
               >
                 Quiero Este Template
-              </button>
+              </button> */}
             </div>
           </div>
 

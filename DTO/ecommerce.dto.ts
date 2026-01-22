@@ -25,6 +25,7 @@ export const templatesDetails: Record<string, TemplateDetailsProps> = {
     features: [
       'Hero section con imagen destacada',
       'Galería de productos responsive',
+      'Delivery y mapa de envíos',
       'Carrito de compras integrado',
       'Sección de testimonios',
       'Footer informativo completo',
@@ -46,6 +47,7 @@ export const templatesDetails: Record<string, TemplateDetailsProps> = {
     features: [
       'Diseño minimalista y elegante',
       'Énfasis en fotografía de producto',
+      'Delivery y mapa de envíos',
       'Navegación intuitiva',
       'Filtros de productos avanzados',
       'Vista rápida de productos',
@@ -67,6 +69,7 @@ export const templatesDetails: Record<string, TemplateDetailsProps> = {
     features: [
       'Colores vibrantes y llamativos',
       'CTAs prominentes',
+      'Delivery y mapa de envíos',
       'Animaciones suaves',
       'Sección de ofertas destacada',
       'Contador de urgencia',
@@ -88,6 +91,7 @@ export const templatesDetails: Record<string, TemplateDetailsProps> = {
     features: [
       'Lookbook estilo revista',
       'Filtros por talla, color, categoría',
+      'Delivery y mapa de envíos',
       'Zoom en productos',
       'Guía de tallas integrada',
       'Sección de tendencias',
@@ -109,6 +113,7 @@ export const templatesDetails: Record<string, TemplateDetailsProps> = {
     features: [
       'Tablas de especificaciones',
       'Comparador de productos',
+      'Delivery y mapa de envíos',
       'Diseño futurista',
       'Reseñas de clientes',
       'Sección de FAQ técnicas',
@@ -202,6 +207,7 @@ export const packages: Package[] = [
     description: 'Ideal si quieres algo simple y económico para empezar.',
     features: [
       'Pagina Statica completa',
+      'Delivery y mapa de envíos',
       'Carrito de compras funcional',
       'Edición fácil desde archivos .js',
       'No usa base de datos',
@@ -217,6 +223,7 @@ export const packages: Package[] = [
     description: 'La opción más completa para escalar tu negocio.',
     features: [
       'Pagina Statica + Servidor',
+      'Delivery y mapa de envíos',
       'Base de datos',
       'Panel de administrador',
       'Registro de clientes',
@@ -237,7 +244,8 @@ export const packages: Package[] = [
       'Cambios de diseño',
       'Funcionalidades personalizadas',
       'Ajustes según tu negocio',
-      'Integraciones a medida'
+      'Integraciones a medida',
+      'No incluye dominio'
     ],
     ctaText: 'Cotizar por WhatsApp',
     ctaAction: 'Hola! Quiero cotizar un Paquete Personalizado'

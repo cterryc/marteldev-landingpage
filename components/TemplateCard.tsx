@@ -1,4 +1,4 @@
-import { contactWhatsApp } from '../helpers/globalFunctions'
+// import { contactWhatsApp } from '../helpers/globalFunctions'
 import { type Template } from '../DTO/ecommerce.dto'
 import { Link } from 'react-router'
 
@@ -34,14 +34,14 @@ const TemplateCard: React.FC<{ template: Template; index: number }> = ({
           >
             Ver Detalles
           </Link>
-          <button
+          {/* <button
             onClick={() =>
               contactWhatsApp(`Hola! Me interesa el template ${template.name}`)
             }
             className='flex-1 text-center text-[10px] font-bold uppercase tracking-widest bg-primary text-dark py-3 hover:bg-primary/90 transition-all'
           >
             Quiero Este
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
