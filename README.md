@@ -6,7 +6,7 @@ MartelDev es una aplicación React de página única (SPA) que muestra 5 plantil
 
 ### Plantillas Disponibles
 
-El proyecto ofrece 5 plantillas especializadas [0-cite-1](#0-cite-1) :
+El proyecto ofrece 5 plantillas especializadas:
 
 - **MODERN SHOP**: Diseño moderno para productos físicos
 - **MINIMAL STORE**: Estética minimalista para productos premium
