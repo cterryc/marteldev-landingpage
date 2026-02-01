@@ -99,7 +99,7 @@ Todas las imágenes usan Cloudinary con parámetros de optimización automática
 
 ## 📝 Licencia
 
-[Especificar licencia]
+Todos los derechos reservados © 2026 MartelDev
 
 ## 👤 Autor
 
